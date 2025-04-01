@@ -14,6 +14,7 @@ public:
     void addBody(const RigidBody& body);
     void applyGlobalForce(const Vector2D& force);
     void simulateStep(double deltaTime);
+    void handleCollisions();
 };
 
 #endif
