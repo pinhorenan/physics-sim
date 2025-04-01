@@ -59,6 +59,7 @@ O projeto utiliza CMake para gerenciar a construção. Para compilar:
    ```bash
    git clone https://github.com/pinhorenan/physics-sim.git
    ```
+   ```
    cd physics-sim
    ```
 
