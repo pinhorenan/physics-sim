@@ -7,12 +7,14 @@ class RigidBody {
 public:
     double mass;
     double restitution; // entre 0 e 1, 1 = rebote perfeito
+    double damping;     // entre 0 e 1, 0 = sem amortecimento
     Vector2D position;
     Vector2D velocity;
     Vector2D acceleration;
     Vector2D netForce;
 
-    explicit RigidBody(double m, double rest = 0.7, const Vector2D& initialPosition = Vector2D(0, 0));
+    // Construtor: massa, restituição, damping e posição inicial (com valores padrão)
+    explicit RigidBody(double m, double rest = 0.7, double damp = 0.99, const Vector2D& initialPosition = Vector2D(0, 0));
 
     void applyForce(const Vector2D& force);
     void clearForces();

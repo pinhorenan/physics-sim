@@ -5,8 +5,8 @@
 int main() {
     PhysicsSim sim;
 
-    const RigidBody bola(1.0, 0.7, Vector2D(0, 5)); // posição mais baixa; // posição mais baixa
-
+    // Cria um corpo com massa 1.0, posição (0,5); usará restituição 0,7 e damping 0,99
+    const RigidBody bola(1.0, 0.7, 0.99, Vector2D(0, 5));
     sim.addBody(bola);
 
     sim.applyGlobalForce(Vector2D(0, -9.8)); // gravidade
