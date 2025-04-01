@@ -20,7 +20,7 @@ void PhysicsSim::simulateStep(double deltaTime) {
 
 void PhysicsSim::handleCollisions() {
     for (size_t i = 0; i < bodies.size(); i++) {
-        for (size_t j = 0; j < bodies.size(); j++) {
+        for (size_t j = i + 1; j < bodies.size(); j++) {
             if (bodies[i].isColliding(bodies[j])) {
                 // Vetor normal da colisão
                 Vector2D normal = bodies[j].position - bodies[i].position;

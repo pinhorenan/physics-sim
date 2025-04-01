@@ -31,8 +31,6 @@ void RigidBody::integrate(const double deltaTime) {
         position.y = 0;
         velocity.y = -velocity.y * restitution;
     }
-
-    clearForces();
 }
 
 void RigidBody::printState() const {
