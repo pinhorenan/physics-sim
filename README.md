@@ -1,6 +1,6 @@
 # Physics-Sim
 
-Este repositório contém um simulador de física 2D escrito em C++ com foco em integração e colisões básicas. O projeto foi desenvolvido para oferecer uma base robusta para simulações físicas, com o objetivo de, futuramente, integrá-lo a um motor gráfico para visualização em tempo real.
+Este repositório contém um simulador de física 2D escrito em C++ com foco em integração e colisões básicas. O projeto foi desenvolvido para oferecer uma base robusta para simulações físicas, para, futuramente, integrá-lo a um motor gráfico para visualização em tempo real.
 
 ## Funcionalidades
 
